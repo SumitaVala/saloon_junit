@@ -21,19 +21,23 @@ public class cucumberlauncherfile {
 			 * "-p","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 			 * featurefileList}); }
 			 */
-			
+
 		@Test 
 		  public void triggertest() throws FileNotFoundException, IOException {
-			
-			  System.setProperty("extent.reporter.avent.start", "true");
-		        System.setProperty("extent.reporter.avent.config", "E:/sumita/git/saloon_testng_1/saloon_testng/src/test/resources/html-config.xml");
-		        System.setProperty("extent.reporter.avent.out", "test-output/AventReport/");
-				
-				
+
+				/*
+				 * System.setProperty("extent.reporter.avent.start", "true");
+				 * System.setProperty("extent.reporter.avent.config",
+				 * "E:/sumita/git/saloon_testng_1/saloon_testng/src/test/resources/extent.properties"
+				 * ); System.setProperty("extent.reporter.avent.out",
+				 * "test-output/AventReport/");
+				 */
+
 			 io.cucumber.core.cli.Main.main(new String[]{"-g", "stepdef",
 					  "-t",tags_include_exclude,
-			//		  "-p","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+					  "-p","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 					  featurefileList});
 		}
 
 }
+

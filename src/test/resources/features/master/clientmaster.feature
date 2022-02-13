@@ -1,6 +1,8 @@
 Feature: first feature
+
+
 @regression @sanity
-Scenario:
+Scenario: My first scenario
 
 	Given Create client record 
 	When Add client detail
